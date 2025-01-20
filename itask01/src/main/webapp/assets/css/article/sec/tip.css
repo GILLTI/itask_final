@@ -1,0 +1,220 @@
+/* 전체 화면 크기 조정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header 영역 (임시) */
+header {
+  border: 1px solid black;
+  background-color: #D96073;
+  width: 100%;
+  height: 100px;
+}
+
+/* main 영역 */
+.itAskBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main 안에 요소들이 담길 컨테이너 박스 (1200px 맞추기 위해 설정) */
+.bjs-tip-topcontainer {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 개발 큰 글씨 */
+.bjs-tip-title {
+  font-size: 50px;
+  margin: 50px;
+}
+
+/* 개발 태그 버튼 담은 박스 */
+.bjs-tip-tag {
+  /* width: 1000px; */
+  /* white-space: wrap; */
+  display: flex;
+  justify-content: center;
+}
+
+/* 개발 태그 버튼 */
+.bjs-tip-tag-btn {
+  border: 1px solid #D96073;
+  color: #D96073;
+  background: none;
+  width: 170px;
+  height: 45px;
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+.bjs-tip-tag-btn:hover {
+  background-color: #e7d4d7;
+}
+
+/* 선택된 버튼 */
+.bjs-tip-select {
+  background: #D96073;
+  color: white;
+}
+
+
+/* 개발 카테고리 버튼 담은 박스 */
+.bjs-tip-category {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+
+/* 개발 카테고리 버튼 */
+.bjs-tip-category-btn {
+  width: 100%;
+  border-radius: 0;
+  border:none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 버튼 밖에 a 태그 사용하는 방법 */
+.bjs-tip-category-btn>a{
+  display:inline-block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  color: black; 
+  padding-top:5px;
+}
+
+/* 게시글 목록 컨테이너 */
+.bjs-tip-post-list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 15px; /* 좌우 여백 추가 */
+}
+
+/* 게시글 단위 */
+.bjs-tip-post-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px; /* 좌우 넓이 추가 */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 게시글 상단 영역 */
+.bjs-tip-post-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* 태그 스타일 */
+.bjs-tip-post-tag {
+  background-color: #D96073; /* 변경된 색상 */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 게시물 제목 */
+.bjs-tip-post-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* 게시물 제목 a 태그 설정 */
+.bjs-tip-post-title > a{
+  text-decoration: none;
+  color:black;
+}
+
+/* 게시글 본문 */
+.bjs-tip-post-body {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* 본문 a 태그 추가 */
+.bjs-tip-post-body>a{
+  text-decoration: none;
+  color:#555;
+}
+
+/* 게시글 하단 정보 */
+.bjs-tip-post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+}
+
+/* 작성자, 조회수, 답글 등 */
+.bjs-tip-post-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bjs-tip-post-info img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.bjs-tip-post-author {
+  cursor: pointer;
+}
+/* 페이지네이션 */
+.pagination {
+  text-align: center;
+  margin: 50px auto;
+  height: 100px;
+}
+
+.pagination a {
+  align-content: center;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 30px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #606060;
+  border: 1px solid #DFDFDF;
+  cursor: pointer;
+}
+.pagination a:hover {
+  font-weight: bold;
+  background-color: #D96073;
+  color: white;
+  border: 1px solid white;
+  transition: .3s;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<!-- 유저 회원가입 -->
+	<insert id="join" parameterType="UserDTO">
+		insert into tbl_user(user_num, user_id, user_pw, user_name, user_nick, user_phone, user_mail, user_cert, user_moniter, user_agree, user_career)
+		values(seq_user.nextVal, #{userId}, #{userPw}, #{userName}, #{userNick}, #{userPhone}, #{userMail}, #{userCert}, #{userMoniter}, #{userAgree}, #{userCareer})
+	</insert>
+	
+	<select id = 'login' parameterType="UserDTO" resultType="UserDTO">
+		select user_num, user_id, user_pw, user_name, user_nick, user_phone, user_mail, user_cert, user_moniter, user_agree, user_career
+		from tbl_user
+		where user_id = #{userId} and user_pw = #{userPw}
+	</select>
+	
+	<update id = 'pwResetting' parameterType="UserDTO">
+		UPDATE tbl_user
+		SET user_pw = #{userPw}
+		WHERE user_id = #{userId}
+	</update>
+</mapper>

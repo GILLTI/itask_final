@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문게시판 자격증목록</title>
+    <link rel="stylesheet" href="./../../assets/css/admin/tipDev.css">
+    <script defer src="./../../assets/js/admin/tipDev.js"></script>
+</head>
+
+<body>
+    <header>
+        <iframe src="./basic/header.html" width="100%" height="300px" frameborder="0"
+            style="display: block; margin-bottom: 20px;"></iframe>
+    </header>
+    <main>
+        <nav class="mtable">
+            <div class="head">
+                <div class="title">꿀팁게시판-개발</div>
+                <div class="buttons">
+                    <button id="editButton">수정</button>
+                    <button id="deleteButton">삭제</button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="tipdevList header">
+                <input type="checkbox" id="selectAll" onclick="toggleSelectAll()">
+                <p>태그</p>
+                <p class="tipdev-title">글제목</p>
+                <p>작성자</p>
+                <p>회원분류</p>
+                <p>작성일</p>
+                <p>조회수</p>
+            </div>
+            <hr>
+
+            <!-- 게시글 -->
+            <div class="tipdevList" data-id="1">
+                <div>
+                    <input type="checkbox" class="item-checkbox">
+                    <p>자바스크립트</p>
+                    <a href="./../admin/articleDetail.html">
+                        <p class="tipdev-title" onclick="toggleText(this)">현업 개발자가 전수하는 게시판만들기 꿀팁</p>
+                    </a>
+                    <p>전문가</p>
+                    <p>멘토</p>
+                    <p>2025-01-11</p>
+                    <p>151</p>
+                </div>
+
+            </div>
+            <div class="tipdevList" data-id="2">
+                <div>
+                    <input type="checkbox" class="item-checkbox">
+                    <p>자바스크립트</p>
+                    <a href="./../admin/articleDetail.html">
+                        <p class="tipdev-title" onclick="toggleText(this)">현업 개발자가 전수하는 게시판만들기 꿀팁</p>
+                    </a>
+                    <p>전문가</p>
+                    <p>멘토</p>
+                    <p>2025-01-11</p>
+                    <p>151</p>
+                </div>
+
+            </div>
+
+            <div class="pagination">
+                <a href="#">«</a>
+                <a href="#">‹</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">›</a>
+                <a href="#">»</a>
+            </div>
+        </nav>
+    </main>
+</body>
+
+</html>

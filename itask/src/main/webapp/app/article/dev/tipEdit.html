@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹페이지 통합</title>
+  <link rel="stylesheet" href="./../../../assets/css/article/dev/tipEdit.css">
+  <script defer src="./../../../assets/js/article/dev/tipEdit.js"></script>
+
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header-box">
+    <div class="header-container">
+      <a href="/" class="header-brand">
+        <img src="/workspace/webapp/assets/img/logo/logo_b.png" alt="iTtip Logo" class="header-logo">
+      </a>
+      <div class="search-box">
+        <div class="search-input-container">
+          <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+          <button class="search-logo">
+            <img src="/workspace/webapp/assets/img/readingGlass.png" alt="search-icon">
+          </button>
+        </div>
+        <a href="#" class="write-box">
+          <img src="/workspace/webapp/assets/img/File Plus 02.png" alt="fileplus2" class="icon"> 글쓰기
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul class="head-container">
+          <li class="head-item">
+            <a href="#" class="head-link">
+              <span id="user-name">XXX님</span>
+              <div class="monitor-box">
+                <div class="monitor-level" id="monitor-levelup">0 inch</div>
+                <img src="/workspace/webapp/assets/img/monitor.png" alt="monitor" class="monitor-icon">
+                <span id="monitor-level">0m</span>
+              </div>
+            </a>
+          </li>
+          <li class="head-item">
+            <a href="#" class="head-link">
+              <div class="user-png">
+                <img src="/workspace/webapp/assets/img/user.png" alt="user" class="user-icon">
+              </div>
+            </a>
+          </li>
+          <li class="head-item">
+            <a href="#" class="head-link logout-box">
+              <img src="/workspace/webapp/assets/img/Logout.png" alt="logout" class="logout-top">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="navbar-box">
+      <div class="navbar-container">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">ITtip란?</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-link">소개글</a></li>
+              <li><a href="#" class="dropdown-link">명예의 전당</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">공지사항</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">개발</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-link">질문</a></li>
+              <li><a href="#" class="dropdown-link">꿀팁</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link">자격증</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-link">시험안내</a></li>
+              <li><a href="#" class="dropdown-link">질문</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="itAskBox">
+    <!-- 메인 -->
+    <!-- 카테고리 선택 -->
+    <div class="mjh-tipEdit-modify">
+      <p class="mjh-tipEdit-modify-title">글 수정</p>
+      <p class="mjh-tipEdit-modify-category">카테고리</p>
+      <!-- 총카테고리리(태그포함) -->
+      <div class="mjh-tipEdit-modify-totalcategory" id="totalcategory">
+        <!-- 상위카테고리리 -->
+        <div class="mjh-tipEdit-modify-category1">
+          <div class="mjh-tipEdit-modify-category1-button mjh-tipEdit-select" data-category1="개발">개발</div>
+          <div class="mjh-tipEdit-modify-category1-button" data-category1="보안">보안</div>
+          <div class="mjh-tipEdit-modify-category1-button" data-category1="자격증">자격증</div>
+        </div>
+        <!-- 하위 카테고리리 -->
+        <div class="mjh-tipEdit-modify-category2">
+          <div class="mjh-tipEdit-modify-category2-button" data-category2="질문">질문</div>
+          <div class="mjh-tipEdit-modify-category2-button mjh-tipEdit-select" data-category2="꿀팁">꿀팁</div>
+        </div>
+        <!-- 태그그 -->
+        <p class="mjh-tipEdit-modify-category">태그</p>
+        <div class="mjh-tipEdit-modify-tag">
+          <div class="mjh-tipEdit-modify-tag-button mjh-tipEdit-select" data-tag="Java">Java</div>
+          <div class="mjh-tipEdit-modify-tag-button" data-tag="HTML">HTML</div>
+          <div class="mjh-tipEdit-modify-tag-button" data-tag="Css">Css</div>
+          <div class="mjh-tipEdit-modify-tag-button" data-tag="JavaScript">JavaScript</div>
+          <div class="mjh-tipEdit-modify-tag-button" data-tag="Oracle">Oracle</div>
+        </div>
+      </div>
+      <!-- 제목 -->
+      <div class="mjh-tipEdit-modify-title-section">
+        <input type="text" id="title" value="게시물 제목 예시"  minlength="8" required />
+      </div>
+      <!-- 글상자 -->
+      <div class="mjh-tipEdit-modify-content-section">
+        <textarea id="content" rows="30" minlength="20" required>본문내용1 본문내용1</textarea>
+      </div>
+      <!-- 첨부파일 입력 -->
+      <div class="mjh-tipEdit-modify-file">
+        <div class="mjh-tipEdit-modify-file-up-container">
+          <div class="mjh-tipEdit-modify-file-upload-container">
+            <div class="mjh-tipEdit-modify-upload-box">
+              <label for="file-upload">첨부파일 선택</label>
+              <input type="file" id="file-upload" accept="image/*">
+            </div>
+            <!-- 업로드 버튼 -->
+            <div class="mjh-tipEdit-modify-upload-button">업로드</div>
+          </div>
+        </div>
+        <!-- 첨부파일 안내 -->
+        <!-- <div class="file-upload-hint">첨부 파일은 자격증 글쓰기 페이지에서만 보여짐</div> -->
+        
+      </div>
+      <!-- 글 수정하기 버튼 -->
+      <div class="mjh-tipEdit-modify-submit-button">글 수정하기</div>
+    </div>
+  </main>
+</body>
+<footer>
+  <div class="mjh-tipEdit-modify-file-binbox"></div>
+</footer>
+
+</html>

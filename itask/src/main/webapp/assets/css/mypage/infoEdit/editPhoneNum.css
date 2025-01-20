@@ -1,0 +1,139 @@
+/* 내정보 수정하기 - 4.핸드폰번호수정 */
+*{  padding: 0; margin: 0; list-style: none; }
+
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+}
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;    
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+.itAskBox>p{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.itAskBox>p>span{
+  font-size: 20px;
+}
+
+/* 감싸는 폼태그 */
+.keh-editPhoneNum-infoForm{
+  margin: auto;
+  width: 486px;
+  /* border: 1px solid #D96073; */
+}
+/* 이름입력칸 */
+.keh-editPhoneNum-name{
+  width: 436px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  left: 0px;
+  font-size: 20px;
+  text-decoration: none;
+} 
+
+/* 폰번호입력 박스, 인증번호입력 박스스 */
+.keh-editPhoneNum-phoneNum-Box{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #D96073; */
+  margin-top: 20px;
+}
+/* 폰번호입력칸, 인증번호 입력칸 */
+.keh-editPhoneNum-phoneNum{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  left: 0px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.keh-editPhoneNum-phoneNum2{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  left: 0px;
+  font-size: 20px;
+  text-decoration: none;
+}
+/* 버튼 */
+.keh-editPhoneNum-phoneNum-btn{
+  height: 70px;
+  width: 130px;
+  background-color: #D96073;
+  color: white;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+.keh-editPhoneNum-phoneNum-btn:hover{
+  color:#D96073;
+  background-color: white;
+  border: 1px solid #D96073;
+}
+
+.keh-editPhoneNum-phoneNum-btn2{
+  height: 70px;
+  width: 130px;
+  background-color: #D96073;
+  color: white;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.keh-editPhoneNum-phoneNum-btn2:hover{
+  color:#D96073;
+  background-color: white;
+  border: 1px solid #D96073;
+}
+
+/* 인증번호 아래 확인되었습니다 문구 */
+.keh-editPhoneNum-checkInfo{
+  text-align: left;
+  padding: 10px 30px;
+  color : #22A309;
+}
+
+.keh-editPhoneNum-submit-btn{
+  width: 486px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #D96073;
+  color: white;
+  border: none;
+  font-size:20px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+.keh-editPhoneNum-submit-btn:hover{
+  border: 1px solid #D96073;
+  color:#D96073;
+  background-color: white;
+  font-weight: bold;
+}
+
+.keh-editPhoneNum-checkInfo{
+  display: none;
+}

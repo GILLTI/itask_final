@@ -1,0 +1,170 @@
+/* 공통 스타일 */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.header-box >div>a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 헤더 스타일 */
+.header-box {
+  background-color: #D96073;
+  color: white;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60%; 
+}
+
+/* 로고 */
+.header-brand img {
+  height: 50px;
+}
+
+/* 검색 박스 */
+.search-box {
+  flex: 0 1 40%;
+  max-width: 500px;
+  margin-right: 1rem; 
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.search-input {
+  border: none;
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.search-logo {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.search-logo img {
+  height: 20px;
+}
+
+.head-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 글쓰기 박스 */
+.write-box {
+  background-color: #ffffff;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem; 
+}
+
+.write-box .icon {
+  margin-right: 0.5rem;
+}
+
+/* 네비게이션 스타일 */
+.navbar-box {
+  background-color: #ac394b;
+  padding: 0.5rem 0;
+  height: 40%; 
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  margin-left: 2rem;
+} 
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  width: 1200px;
+  margin: auto;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #D96073;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-menu .dropdown-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu .dropdown-link:hover {
+  background-color: #f0f0f0;
+  color: #D96073;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}

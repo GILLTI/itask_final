@@ -1,0 +1,151 @@
+/* 공통 스타일 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+  /* 헤더 스타일 */
+ .header {
+      background-color: #D96073;
+      padding: 10px 20px;
+      color: white;
+  }
+  
+  .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1200px;
+      margin: auto;
+  }
+  
+  .header-brand .header-logo {
+      height: 50px;
+      cursor: pointer;
+  }
+  .header-brand .header-logo:hover{
+    scale: 110%;
+    transition: .5s;
+  }
+  
+  .search-container {
+      display: flex;
+      align-items: center;
+  }
+  
+  .search-wrapper {
+      position: relative;
+  }
+  
+  .search-input {
+      padding: 8px 10px;
+      padding-right: 40px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      width: 250px;
+      border-radius: 50px;
+  }
+  
+  .search-button {
+      position: absolute;
+      right: 10px; 
+      top: 50%; 
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .search-button>img {
+      width: 20px;
+      padding: 1px 2px;
+      opacity: 80%;
+  }
+  .search-button>img:hover{
+    opacity: 40%;
+  }
+  /* 글쓰기버튼 */
+  .write-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    color: #D96073;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  /* 글쓰기 버튼 호버 */
+  .write-button:hover{
+/* opacity: 80%; */
+scale: 105%;
+transition: .2s;
+  }
+  
+  .admin-info {
+      font-size: 14px;
+  }
+  
+  .logout-link {
+      margin-left: 10px;
+      font-size: 12px;
+      color: #ffffffaa;
+  } 
+  .logout-link:hover{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* 네비게이션 스타일 */
+  .navbar {
+      background-color: #A24552;
+      padding: 10px 20px 20px;
+  }
+  
+  .navbar-menu {
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+      width: 1200px;
+    margin: auto;
+  }
+  /* 메뉴에 마우스오버했을때 */
+  .menu-link:hover,.submenu>a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color:#D6DC82 ;
+  }
+  
+  .menu-item {
+      text-align: left;
+      list-style: none;
+  }
+  
+  .menu-link {
+      color: white;
+      font-size: 16px;
+      display: block;
+      padding: 5px 0;
+  }
+  
+  .submenu {
+      margin-top: 5px;
+  }
+  
+  .submenu-link {
+      display: block;
+      color: white;
+      font-size: 14px;
+      padding: 2px 0;
+  }

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    margin: auto;
+}
+
+.mtable {
+    width: 60%;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.head .buttons button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #D96073;
+    color: #DFDFDF;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.tipsecList.header {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.tipsecList.header p {
+    margin: 0 15px;
+    text-align: center;
+    width: 120px;
+}
+
+.tipsecList.header .tipsec-title {
+    width: 400px;
+    text-align: left;
+}
+
+.tipsecList {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+.tipsecList>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.tipsecList p,
+.tipsecList input {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.tipsecList p {
+    width: 120px;
+}
+
+.tipsecList .tipsec-title {
+    width: 400px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.tipsec-text {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #606060;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    align-content: center;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #606060;
+    border: 1px solid #DFDFDF;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    font-weight: bold;
+    background-color: #D96073;
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+}

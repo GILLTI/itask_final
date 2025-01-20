@@ -1,0 +1,98 @@
+/* 내정보 수정하기 - 3.비밀번호변경 */
+*{  padding: 0; margin: 0; }
+
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+}
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;    
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+
+/* 감싸는 폼태그 */
+.keh-login-loginForm{
+  margin: auto;
+  width: 486px;
+  /* border: 1px solid #D96073; */
+}
+
+/* 아이디입력칸 */
+.keh-login-id{
+  width: 436px;
+  padding-left: 50px;
+  height: 70px;
+  text-decoration: none;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* 비밀번호입력칸 */
+.keh-login-loginForm>div{
+  position: relative;
+  height: 90px;
+}
+.keh-login-pw{
+  width: 436px;
+  padding-left: 50px;
+  height: 70px;
+  text-decoration: none;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+}
+.keh-login-loginForm>div>img{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+/* 로그인버튼 */
+.keh-login-loginBtn{
+  width: 486px;
+  height: 70px;
+  text-decoration: none;
+  border: none;
+  background-color: #D96073;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.keh-login-loginBtn:hover{
+  background-color: white;
+  border: 1px solid #D96073;
+  color: #D96073;
+}
+
+/* 비번찾기/회원가입버튼 */
+.itAskBox>p{
+  /* border: 1px solid #D96073; */
+  margin: auto;
+}
+.itAskBox>p>a{
+  text-decoration: none;
+  line-height: 40px;
+  padding: 0px 30px;
+}
+.itAskBox>p>a:hover{
+  font-weight: bold;
+}
+.keh-login-pwBtn{
+  color: #606060;
+  border-right: 1px solid #DFDFDF;
+}
+.keh-login-joinBtn{
+  color: #D96073;
+}

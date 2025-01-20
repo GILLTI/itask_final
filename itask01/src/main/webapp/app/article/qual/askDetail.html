@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/article/qual/askDetail.css">
+  <script defer src="./../../../assets/js/article/qual/askDetail.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <header>header area</header>
+  <!-- 메인 영역 -->
+  <main class="itAskBox">
+    <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+    <article class="lch-askDetail-elements">
+      <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+      <div class="lch-askDetail-topcontainer">
+        <!-- 자격증  -->
+        <span class="lch-askDetail-title">자격증</span>
+        <!-- 자격증 상위 카테고리 -->
+        <div class="lch-askDetail-category">
+          <button class="lch-askDetail-category-btn" onclick="location.href='./guide/infoSec.html'">시험안내</button>
+          <button class="lch-askDetail-category-btn lch-askDetail-select" onclick="location.href='./ask.html'">질문</button>
+          <button class="lch-askDetail-category-btn" onclick="location.href='./tip.html'">꿀팁</button>
+        </div>
+      </div>
+      <!-- 준혁님 코드 들어갈 부분 (게시글 내용) -->
+      <!-- 본문 전체체 -->
+      <article class="lch-askDetail-text-total" data-tag="정보보안">
+        <!-- 본문 헤더더 -->
+        <div class="askDetail-text-header">
+          <span class="lch-askDetail-text-tag">정보보안</span>
+          <div class="lch-askDetail-text-title">게시물 제목 예시</div>
+          <div class="lch-askDetail-text-profile">
+            <img src="./../../../assets/img/profile.png" alt="">
+            <span class="lch-askDetail-text-author"><b>27inch</b> 문준혁🏅</span>
+          </div>
+          <div class="lch-askDetail-text-date">2025-01-09 00:00</div>
+        </div>
+        <!-- 본문 메인인 -->
+        <img src="./../../../assets/img/qualImg.png" alt="자격증 이미지" class="lch-askDetail-qual-img">
+        <article class="lch-askDetail-text-textbody">
+          본문내용1 본문내용1
+        </article>
+        <!-- 본문 바텀텀 -->
+        <article class="lch-askDetail-text-textbottom">
+          <!-- 본문 태그그 -->
+          <span class="lch-askDetail-text-bottom-tag">자격증</span>
+          <span class="lch-askDetail-text-bottom-tag">질문</span>
+          <span class="lch-askDetail-text-bottom-tag">정보보안</span>
+          <!-- 본문 모니터, 댓글, 공유수 -->
+          <div class="lch-askDetail-content">
+            <img src="./../../../assets/img/moniter.png" alt="모니터수" id="Detail-moniter-img">
+            <span id="Detail-monitercount">0</span>
+            <img src="./../../../assets/img/view.png" alt="조회수" id="Detail-view-img">
+            <span id="Detail-viewcount">0</span>
+            <img src="./../../../assets/img/share.png" alt="공유수" id="Detail-share-img">
+            <span id="Detail-sharecount">0</span>
+            <!-- 본문 수정삭제 드롭다운-->
+            <div class="lch-askDetail-dropdown">
+              <img src="./../../../assets/img/Container.png" alt="드롭다운 이미지" class="lch-askDetail-dropdown-img"
+                onclick="Dropdown()">
+              <div class="lch-askDetail-dropdown-menu" id="dropdownMenu">
+                <a href="#">수정</a>
+                <a href="#" id="postdelete">삭제</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </article>
+      <!-- 게시글 내용에 대한 댓글 부분 -->
+      <article class="lch-askDetail-comment-box">
+
+        <!-- 총 댓글 수 -->
+        <div class="lch-askDetail-comment-count">댓글 <span id="comment-count">1</span></div>
+        <!-- 댓글 작성 창 -->
+        <div class="lch-askDetail-comment-input">
+          <textarea id="comment-input" name="lch-askDetail-ask-box" rows="4" cols="50" placeholder="칭찬 댓글은 작성자에게 큰 힘이 됩니다."></textarea>
+          <button onclick="addComment()" class="lch-askDetail-add-btn">올리기</button>
+        </div>
+
+        <!-- 작성된 댓글이 보여지는 리스트 창 -->
+        <div id="comment-section">
+          <!-- --------------------------여기서부터 댓글 하나당-------------------- -->
+          <div class="lch-askDetail-comment-show">
+            <span class="lch-askDetail-commnet-author">27inch 문준혁🏅</span>
+            <div class="lch-askDetail-comment-section"> 보여주기용 댓글 입니다</div>
+            <!-- 작성된 날짜, 조회수, 모니터를 담은 박스 -->
+            <div class="lch-askDetail-comment-info">
+              <span class="lch-askDetail-comment-date">14일전</span>
+              <span class="lch-askDetail-comment-monitor">
+                <img src="./../../../assets/img/monitor.png" alt="사진오류" class="lch-askDetail-comment-cnt"> 
+                <span id="askDetail-comment-monitor-num" class="lch-askDetail-comment-monitor-num">100</span>
+              </span>
+            </div>
+          </div>
+          <!-- --------------------------이만큼 추가돼야함^_^~-------------------- -->
+        </div>
+      </article>
+
+    </article>
+  </main>
+</body>
+
+</html>

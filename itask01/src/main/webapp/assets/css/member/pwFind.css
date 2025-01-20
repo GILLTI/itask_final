@@ -1,0 +1,146 @@
+/* 비밀번호찾기 */
+*{  padding: 0; margin: 0; }
+
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+}
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;    
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+.itAskBox>p{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.itAskBox>p>span{
+  font-size: 20px;
+}
+/* 감싸는 폼태그 */
+.keh-pwFind-pwForm{
+  margin: auto;
+  width: 486px;
+  /* border: 1px solid #D96073; */
+}
+.keh-pwFind-pwBox1, .keh-pwFind-pwBox2{
+position: relative;
+/* border: 1px solid #606060; */
+height: 130px;
+}
+
+.keh-pwFind-pwForm>div>img{
+position: relative;
+top: 10px;
+right: -200px;
+}
+/* 아이디입력칸 */
+.keh-pwFind-id{
+  width: 436px;
+  height: 70px;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  padding-left: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* 이름입력칸 */
+.keh-pwFind-name{
+  width: 436px;
+  height: 70px;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  padding-left: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* 폰번호입력박스 */
+.keh-pwFind-phoneNumBox{
+width: 486px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+/* 휴대폰번호 입력칸 */
+.keh-pwFind-phoneNum{
+  width: 288px;
+  height: 70px;
+  border-radius: 50px;
+  border: 1px solid #DFDFDF;
+  padding-left: 50px;
+  font-size: 20px;
+}
+/* 인증번호받기버튼 */
+.keh-pwFind-phoneNum-btn{
+  width: 132px;
+  height: 70px;
+  color: white;
+  background-color: #D96073;
+  border: none;
+  border-radius: 50px;  
+  cursor: pointer;
+}
+.keh-pwFind-phoneNum-btn:hover{
+  color: #D96073;
+  border: 1px solid #D96073;
+  background-color: white;
+}
+/* 인증번호입력칸 */
+.keh-pwFind-checkNum2{
+  width: 288px;
+  height: 70px;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+/* 인증번호확인버튼 */
+.keh-pwFind-phoneNum-btn2{
+  width: 132px;
+  height: 70px;
+  color: white;
+  background-color: #D96073;
+  border: none;
+  border-radius: 50px;  
+  cursor: pointer;
+}
+.keh-pwFind-phoneNum-btn2:hover{
+  color: #D96073;
+  border: 1px solid #D96073;
+  background-color: white;
+}
+
+/* 버튼 */
+.keh-pwFind-pwBtn{
+  width: 486px;
+  height: 70px;
+  background-color: #D96073;
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.keh-pwFind-pwBtn:hover{
+  color:#D96073;
+  border: 1px solid #D96073;
+  background-color: white;
+  font-weight: bold;
+}
+
+
+/* 인증번호 아래 확인되었습니다 문구 */
+.keh-pwFind-checkInfo{
+  text-align: left;
+  padding: 10px 30px;
+  color : #22A309;
+  display:none;
+}

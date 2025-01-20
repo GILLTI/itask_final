@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>workspace</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!-- 개발 -->
+  <servlet>
+     <servlet-name>Dev</servlet-name>
+     <servlet-class>com.itask.app.dev.DevFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Dev</servlet-name>
+     <url-pattern>*.dev</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 보안 -->
+  <servlet>
+     <servlet-name>Sec</servlet-name>
+     <servlet-class>com.itask.app.sec.SecFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Sec</servlet-name>
+     <url-pattern>*.Sec</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 자격증 -->
+  <servlet>
+     <servlet-name>Qual</servlet-name>
+     <servlet-class>com.itask.app.qual.QualFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Qual</servlet-name>
+     <url-pattern>*.qu</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 소개 -->
+  <servlet>
+     <servlet-name>Intro</servlet-name>
+     <servlet-class>com.itask.app.intro.IntroFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Intro</servlet-name>
+     <url-pattern>*.in</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 공지 -->
+  <servlet>
+     <servlet-name>Notice</servlet-name>
+     <servlet-class>com.itask.app.notice.NoticeFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Notice</servlet-name>
+     <url-pattern>*.no</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 글쓰기 -->
+  <servlet>
+     <servlet-name>Write</servlet-name>
+     <servlet-class>com.itask.app.write.WriteFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Write</servlet-name>
+     <url-pattern>*.wr</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 마이페이지 -->
+  <servlet>
+     <servlet-name>Mypage</servlet-name>
+     <servlet-class>com.itask.app.mypage.MypageFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Mypage</servlet-name>
+     <url-pattern>*.my</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 로그인/회원가입/로그아웃 -> 멤버 -->
+  <servlet>
+     <servlet-name>Member</servlet-name>
+     <servlet-class>com.itask.app.member.MemberFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Member</servlet-name>
+     <url-pattern>*.me</url-pattern>
+  </servlet-mapping>
+</web-app>

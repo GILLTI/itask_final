@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/article/qual/ask.css">
+  <script defer src="./../../../assets/js/article/qual/ask.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <header>header area</header>
+
+  <!-- 메인 영역 -->
+  <main class="itAskBox">
+    <!-- 메인 안에 요소들이 담길 컨테이너 박스 -->
+    <article class="lch-ask-elements">
+      <!-- 자격증  -->
+      <span class="lch-ask-title">자격증</span>
+      <!-- 자격증 상위 카테고리 -->
+      <div class="lch-ask-category">
+        <button class="lch-ask-category-btn" onclick="location.href='./guide/infoSec.html'">시험안내</button>
+        <button class="lch-ask-category-btn lch-ask-select" onclick="location.href='./ask.html'">질문</button>
+        <button class="lch-ask-category-btn" onclick="location.href='./tip.html'">꿀팁</button>
+      </div>
+      <!-- 자격증 태그 버튼 -->
+      <div class="lch-ask-tag">
+        <button class="lch-ask-tag-btn lch-ask-select">전체</button>
+        <button class="lch-ask-tag-btn">정보보안</button>
+        <button class="lch-ask-tag-btn">정보처리</button>
+        <button class="lch-ask-tag-btn">네트워크관리사</button>
+        <button class="lch-ask-tag-btn">리눅스마스터</button>
+        <button class="lch-ask-tag-btn">SQLD</button>
+      </div>
+
+      <!-- 게시물 반복 (1행) -->
+      <section class="lch-ask-post-list">
+        <article class="lch-ask-post-item" data-tag="정보보안" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/infoSec.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">정보보안</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+
+        <!-- 추가 게시물은 동일한 구조를 복제 -->
+        <article class="lch-ask-post-item" data-tag="정보처리" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/infoPro.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">정보처리</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+
+        <!-- 추가 게시물은 동일한 구조를 복제 -->
+        <article class="lch-ask-post-item" data-tag="네트워크관리사" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/netManager.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">네트워크관리사</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+
+        <!-- 추가 게시물은 동일한 구조를 복제 -->
+        <article class="lch-ask-post-item" data-tag="리눅스마스터" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/linuxMaster.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">리눅스마스터</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+        <article class="lch-ask-post-item" data-tag="SQLD" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/sqld.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">SQLD</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+
+        <!-- 추가 게시물은 동일한 구조를 복제 -->
+        <article class="lch-ask-post-item" data-tag="정보처리" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/infoPro.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">정보처리</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+
+        <!-- 여기서부터 짤려서 2행으로 들어감 -->
+        <!-- 추가 게시물은 동일한 구조를 복제 -->
+        <article class="lch-ask-post-item" data-tag="네트워크관리사" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/netManager.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">네트워크관리사</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+
+        <!-- 추가 게시물은 동일한 구조를 복제 -->
+        <article class="lch-ask-post-item" data-tag="리눅스마스터" onclick="location.href='./askDetail.html'">
+          <div >
+            <img class="lch-ask-thumbnail" src="./../../../assets/img/linuxMaster.png" alt="섬네일 사진오류">
+          </div>
+          <div class="lch-ask-post-header">
+            <span class="lch-ask-post-tag">리눅스마스터</span>
+            <span class="lch-ask-post-title">게시물 제목 예시</span>
+          </div>
+          <div class="lch-ask-post-footer">
+            <div class="lch-ask-post-info">
+              <span class="lch-ask-post-author">27inch 문준혁🏅</span>
+              <span class="lch-ask-post-date">2025-01-09</span>
+          </div>
+        </article>
+      </section>
+    </article>
+    <div class="pagination">
+      <a href="#">«</a>
+      <a href="#">‹</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">›</a>
+      <a href="#">»</a>
+  </div>
+  </main>
+  <footer>footer area</footer>
+</body>
+
+</html>

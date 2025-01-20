@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관리자 헤더</title>
+  <link rel="stylesheet" href="./../../../assets/css/admin/basic/header.css">
+  <script defer src="./../../../assets/js/admin/basic/header.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+          <!-- 로고 -->
+          <div class="header-brand">
+            <img src="/workspace/webapp/assets/img/logo/logo_b.png" alt="ITASK 로고" class="header-logo">
+          </div>
+          <!-- 검색 및 글쓰기 -->
+          <div class="search-container">
+            <div class="search-wrapper">
+              <input type="text" class="search-input" placeholder="키워드를 입력하세요">
+              <button class="search-button">
+                <img src="/workspace/webapp/assets/img/readingGlass.png" alt="검색 아이콘">
+              </button>
+            </div>
+            <a href="./../write.html" class="write-button" target="main">
+              <img src="/workspace/webapp/assets/img/File Plus 02.png" alt="글쓰기 아이콘">
+              글쓰기
+            </a>
+          </div>
+          <!-- 관리자 환영 메시지 -->
+          <div class="admin-info">
+            관리자님 환영합니다
+            <a href="./../adminLogin.html" class="logout-link" target="main">로그아웃</a>
+          </div>
+        </div>
+      </header>
+    
+      <!-- 네비게이션 -->
+      <nav class="navbar">
+        <ul class="navbar-menu">
+          <!-- 회원관리 -->
+          <li class="menu-item">
+            <a href="#" class="menu-link">회원관리</a>
+            <div class="submenu">
+              <a href="#" class="submenu-link">블랙리스트</a>
+              <a href="./../../admin/basic/totalMember.html" target="main" class="submenu-link" id="total">전체회원</a>
+              <a href="./../../admin/generalMember.html" target="main" class="submenu-link" id="general">일반회원</a>
+              <a href="./../../admin/mentoMember.html" target="main" class="submenu-link" id="mento">멘토회원</a>
+            </div>
+          </li>
+          <!-- 공지게시판 -->
+          <li class="menu-item">
+            <a href="#" class="menu-link">공지게시판</a>
+            <div class="submenu">
+              <a href="./../notice.html" target="main" class="submenu-link" id="notice">공지게시판 목록</a>
+            </div>
+          </li>
+          <!-- 꿀팁게시판 -->
+          <li class="menu-item">
+            <a href="#" class="menu-link">꿀팁게시판</a>
+            <div class="submenu">
+              <a href="./../../admin/tipDev.html" target="main" class="submenu-link">개발</a>
+              <a href="./../../admin/tipSec.html" target="main" class="submenu-link">보안</a>
+              <a href="./../../admin/tipQual.html" target="main" class="submenu-link">자격증</a>
+            </div>
+          </li>
+          <!-- 질문게시판 -->
+          <li class="menu-item">
+            <a href="#" class="menu-link">질문게시판</a>
+            <div class="submenu">
+              <a href="./../../admin/askDev.html" target="main" class="submenu-link">개발</a>
+              <a href="./../../admin/askSec.html" target="main" class="submenu-link">보안</a>
+              <a href="./../../admin/askQual.html" target="main" class="submenu-link">자격증</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+</body>
+
+</html>

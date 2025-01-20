@@ -1,0 +1,403 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.itAskBox {
+  height: 2500px;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* 헤더 스타일 */
+.header-box {
+  background-color: #D96073;
+  color: white;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 로고 */
+.header-brand img {
+  height: 50px;
+}
+
+/* 검색 박스 */
+.search-box {
+  flex: 0 1 40%;
+  max-width: 500px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.search-input {
+  border: none;
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.search-logo {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.search-logo img {
+  height: 20px;
+}
+
+/* head-container */
+.head-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 글쓰기 박스 */
+.write-box {
+  background-color: #ffffff;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.write-box .icon {
+  margin-right: 0.5rem;
+}
+
+/* 모니터 박스 */
+.monitor-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.monitor-icon {
+  margin-top: 0.5rem;
+}
+
+.monitor-level {
+  font-size: 1rem;
+  color: white;
+  margin-top: 0.3rem;
+}
+
+/* 로그아웃 박스 */
+.logout-box img {
+  display: block;
+  height: 40px;
+  margin: auto;
+}
+
+/* 네비게이션 스타일 */
+.navbar-box {
+  background-color: #ac394b;
+  padding: 0.5rem 0;
+  /* width: 1200px;
+  margin: auto; */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  margin-left: 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  width: 1200px;
+  margin: auto;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #D96073;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-menu .dropdown-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu .dropdown-link:hover {
+  background-color: #f0f0f0;
+  color: #D96073;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* 메인 */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 카테고리 */
+.write-click {
+  text-align: center;
+  position: relative;
+}
+
+.write-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.write-clickbox, 
+.subcategory-container, 
+.subsubcategory-container 
+{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.write-button, 
+.subcategory-button, 
+.subsubcategory-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid #d96073;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #d96073;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.write-button:hover, 
+.subcategory-button:hover, 
+.subsubcategory-button:hover {
+  transform: scale(1.1);
+  background-color: #fdecec;
+}
+
+/* 글쓰기  */
+
+.write-title-section input,
+.write-content-section textarea {
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #606060;
+  max-width: 1200px;
+  width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+/* 첨부파일 */
+.write-file {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid rebeccapurple; */
+  line-height: 12px;
+}
+
+/* .file-up-container {
+  justify-content: space-between;
+} */
+
+.file-upload-container {
+  /* position: absolute; */
+  width: 100%;
+  height: 40px;
+  left: 263px;
+  top: 959px;
+  /* background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+
+}
+
+.file-upload-container label {
+  font-size: 14px;
+  color: #606060;
+  cursor: pointer;
+}
+
+.file-upload-container input[type="file"] {
+  display: none;
+  width: 80%;
+}
+
+
+
+.upload-box{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+}
+
+/* 첨부파일 안내 텍스트 */
+.file-upload-hint {
+  /* position: absolute; */
+  left: 268px;
+  top: 1015px;
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+  padding: 50px 30px;
+}
+
+/* 업로드 버튼 */
+.upload-button {
+  /* position: absolute;  */
+  width: 158.53px;
+  height: 45.87px;
+  /* left: 773.47px;
+  top: 955.13px; */
+  background: #FFFFFF;
+  border: 1px solid #D96073;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #AC394B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* 글 작성하기 버튼 */
+.submit-button {
+  /* position: absolute; */
+  width: 100%;
+  height: 45px;
+  /* left: 270px;
+  top: 1050px; */
+  background: #D96073;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  border: 1px solid #D96073;
+  color: #D96073;
+  background-color: #FFFFFF;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+.file-box{
+  width: 1200px;
+  height: 60px;
+}

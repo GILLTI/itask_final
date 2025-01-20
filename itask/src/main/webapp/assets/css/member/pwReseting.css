@@ -1,0 +1,89 @@
+/* 비밀번호 재설정 */
+*{  padding: 0; margin: 0; }
+
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+}
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;    
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+.itAskBox>p{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.itAskBox>p>span{
+  font-size: 20px;
+}
+/* 비번입력 감싸는 폼태그 */
+.keh-pwReseting-pwForm{
+  margin: auto;
+  width: 486px;
+  /* border: 1px solid #D96073; */
+}
+.keh-pwReseting-pwBox1, .keh-pwReseting-pwBox2{
+position: relative;
+/* border: 1px solid #606060; */
+height: 130px;
+}
+
+.keh-pwReseting-pwForm>div>img{
+position: relative;
+top: 10px;
+right: -200px;
+}
+/* 비번입력하는 실제 칸 */
+.keh-pwReseting-pw{
+  width: 436px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 비밀번호 적합멘트 */
+.keh-pwReseting-pwBox1>p, .keh-pwReseting-pwBox2>p{
+text-align: left;
+position: absolute;
+margin-top: 30px;
+padding-left: 30px;
+font-size: 12px;
+}
+.keh-pwReseting-check1{
+  color: #D96073;
+  /* display: none; */
+}
+.keh-pwReseting-check2{
+  color: #22A309;
+  display: none;
+}
+/* 버튼 */
+.keh-pwReseting-pwBtn{
+  width: 486px;
+  height: 70px;
+  background-color: #D96073;
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.keh-pwReseting-pwBtn:hover{
+  color:#D96073;
+  border: 1px solid #D96073;
+  background-color: white;
+  font-weight: bold;
+}
+
+

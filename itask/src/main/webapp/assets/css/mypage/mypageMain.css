@@ -1,0 +1,172 @@
+/* 마이페이지-일반회원 */
+*{
+  margin: 0; padding: 0; list-style: none;
+  color: #606060;
+}
+
+/* 공통메인 - 마이페이지 */
+.itAskBox{
+  height: 800px;
+  width: 1200px;
+  margin: 110px auto 0px;
+  /* background-color: rgb(201, 255, 237); */
+}
+/* 마이페이지 제목 */
+h3{
+font-size: 20px;
+width: 1038px;
+border-bottom: 1px solid #DFDFDF;
+padding-bottom:10px;
+margin: 0px auto 30px;
+}
+/* 좌측 프로필사진 박스*/
+.keh-mypageMain-profile-left{
+  float: left;
+  /* background-color: antiquewhite; */
+  border: 1px solid #DFDFDF;
+  width: 320px;
+  height: 632px;
+  border-radius:50px;
+  margin-left: 80px;
+  text-align: center;  
+}
+/* 프로필사진공간 */
+.keh-mypageMain-pic{
+  background-color: #D6DC82;
+  width: 250px;
+  height: 250px;
+  border-radius : 200px;
+  margin: 40px auto;
+}
+/* 회원구분 */
+.keh-mypageMain-memType{
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.keh-mypageMain-memType>span{
+  border: 1px solid black;
+  display: none;
+}
+/* 닉네임 */
+.keh-mypageMain-memNickName{
+  font-size: 32px;
+}
+/* 내 모니터 총합 */
+.keh-mypageMain-myMonitor{
+  font-size: 20px;
+}
+/* 구분선 */
+hr{
+  width: 250px;
+  margin: 42px auto;
+  border: 1px solid #DFDFDF;
+}
+/* 프로필사진하단 메뉴 */
+.keh-mypageMain-myMenu>li>a{
+  text-decoration-line: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px 0px;
+}
+.keh-mypageMain-myMenu>li>a:hover{
+  font-weight: bold;
+}
+
+/* 우측 내활동 */
+.keh-mypageMain-profile-right{
+  float: right;
+  width: 628px;
+  height: 632px;
+  /* background-color:#D6DC82; */
+  margin-right: 80px;
+}
+/* 1.내게시물/내댑변 */
+.keh-mypageMain-article{
+  font-size: 20px;
+  height: 152px;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.keh-mypageMain-article>ul{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.keh-mypageMain-article>ul>li{
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  margin-top: 38px;
+}
+.keh-mypageMain-article>ul>li:first-child{
+  border-right: 1px solid #DFDFDF;
+}
+.keh-mypageMain-line{
+  width: 1px;
+  margin-top: 25px;
+  height: 100px;
+  display: block;
+  background-color: #DFDFDF;
+}
+.keh-mypageMain-article p{
+  font-size: 32px;
+}
+
+/* 2.뱃지 */
+.keh-mypageMain-badge{
+  width: 100%;
+  height: 277px;
+  /* background-color: blueviolet; */
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+}
+.keh-mypageMain-badge>ul{
+  text-align: center;
+}
+.keh-mypageMain-badge>ul>li{
+  font-size: 20px;
+}
+.keh-mypageMain-badge>ul>li:first-child{
+  padding: 50px 0px 40px;
+}
+.keh-mypageMain-badge>ul>li>p{
+  font-size: 32px;
+}
+/* 뱃지리스트 */
+.keh-mypageMain-badgeList{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+.keh-mypageMain-badgeList>li>div{
+  width: 60px;
+  height: 60px;
+  background-color: #DFDFDF;
+  border-radius: 50px;
+}
+/* 나중에 뱃지에 이미지 넣게되면 아래내용 켜세요 */
+/* .keh-mypageMain-badgeList>li>div>img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+} */
+/* 3.경력 */
+.keh-mypageMain-career{
+  width: 100%;
+  /* background-color: chocolate; */
+  height: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+.keh-mypageMain-career>ul{
+  padding-top: 30px;
+}
+.keh-mypageMain-career>ul>li:first-child{
+  font-size: 20px;
+  margin-bottom: 10px;
+}

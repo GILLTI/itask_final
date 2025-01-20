@@ -1,0 +1,141 @@
+/* 내정보 수정하기 - 2.내정보 수정하기 */
+*{  padding: 0; margin: 0; list-style: none; }
+
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+  height: 1400px;
+  /* border: 1px solid #D96073; */
+}
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;    
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+.itAskBox>p{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.itAskBox>p>span{
+  font-size: 20px;
+}
+/* 인증된 정보 상자 */
+.itAskBox>section{
+  width: 406px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  margin: 0px auto 50px;
+  padding: 40px;
+  text-align: left;
+  font-size: 20px;
+}
+.itAskBox>section>ul>li{
+  line-height: 50px;
+}
+/* 닉네임 감싸는 폼태그 */
+.keh-editInfo-infoForm{
+  margin: auto;
+  width: 486px;
+  /* border: 1px solid #D96073; */
+}
+.keh-editInfo-infoForm>p{
+  text-align: left;
+  margin-top: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+/* 중복 검사 했을 때 중복이면 출력되게 - 배지수 작성 */
+.bjs-editInfo-duplicate-nickName {
+  color:#D96073;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 30px;
+  font-size: 20px;
+  display: none;
+}
+
+.keh-editInfo-nickNameBox{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 닉네임입력하는 실제 칸 */
+.keh-editInfo-nickName{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  left: 0px;
+  font-size: 20px;
+  text-decoration: none;
+}
+/* 수정버튼 */
+.keh-editInfo-nickName-btn{
+  height: 70px;
+  width: 130px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+.keh-editInfo-nickName-btn:hover{
+  color:#D96073;
+  background-color: white;
+  border: 1px solid #D96073;
+}
+/* 경계선 */
+.itAskBox>hr{
+  width: 486px;
+  border: 1px solid #dfdfdf;
+  margin: 40px auto;
+}
+
+/* 비번수정버튼 */
+.itAskBox>button{
+  width: 486px;
+  height: 70px;
+  background-color: #D96073;
+  font-size: 20px;
+  text-decoration: none;  
+  border-radius: 50px;
+  margin: 10px 0px;
+  border: none;
+}
+.itAskBox>button:hover{
+  border: 1px solid #D96073;
+  background-color: white;
+}
+/* 폰번호수정버튼 */
+.itAskBox>button>a{
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  text-decoration: none; 
+  color: white;
+  display: inline-block;
+  border: none;
+}
+.itAskBox>button>a:hover{
+  color:#D96073;
+  font-weight: bold;
+}
+/* 회원탈퇴 버튼 */
+#idid{
+  color: white;
+}
+#idid:hover{
+  color:#D96073;
+  font-weight: bold;
+}

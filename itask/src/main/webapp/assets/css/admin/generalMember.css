@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: auto;
+}
+
+.mtable {
+    width: 60%;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.head .buttons button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #D96073;
+    color: #DFDFDF;
+    border-radius: 20px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.memColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.memColumn.header {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.memColumn p,
+.memColumn input {
+    margin: 0 15px;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.memColumn p {
+    width: 120px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    align-content: center;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #606060;
+    border: 1px solid #DFDFDF;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    font-weight: bold;
+    background-color: #D96073;
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+}

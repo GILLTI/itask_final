@@ -1,0 +1,408 @@
+/* 회원가입 페이지 2/3 : 회원정보 입력*/
+*{ padding: 0; margin: 0;}
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+}
+
+
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+.itAskBox>p{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.itAskBox>p>span{
+  font-size: 20px;
+}
+
+
+.itAskBox>form{
+  margin: auto;
+}
+
+.itAskBox>form>div{
+width: 486px;
+}
+
+
+
+
+/* 회원정보 상자 */
+.lsa-join-inforForm{
+  margin: auto;
+  width: 4869px;
+  /* border: 1px solid #D96073; */
+  align-items: center;
+}
+
+/* 이름 감싸는 폼태그 */
+.lsa-join-infoBox-name{
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 90px;
+  width: 486px;  /*여기 추가*/
+  margin: auto;  /*여기 추가*/
+}
+/* 이름 입력하는 실제칸 */
+.lsa-join-info-name{
+  width: 436px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+
+/* 휴대폰번호 감싸는 폼태그 */
+.lsa-join-infoBox-phoneNumber{  
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 90px;
+  width: 486px;
+  margin: auto;
+}
+/* 핸드폰번호 입력하는 실제칸 */
+.lsa-join-info-phoneNumber{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 인증번호받기 버튼 */
+.lsa-join-info-phoneNumber-btn{
+  width: 130px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+}
+
+/* 인증번호 감싸는 폼태그 */
+.lsa-join-infoBox-certiNumber{  
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 130px;
+  width: 486px;
+  margin: auto;
+}
+.lsa-join-infoBox-certiNumber>p{
+  text-align: left;
+  padding-left: 50px;
+  color: #22A309;
+  margin-top: 80px;
+}
+/* 인증번호 입력하는 실제칸 */
+.lsa-join-info-certiNumber{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 인증번호확인 버튼 */
+.lsa-join-certiNumber-btn{
+  width: 130px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  padding-right: 50px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+}
+/* "인증번호가 확인되었니다" */
+.lsa-join-info-certiNumber-check{
+  color: #606060;
+  /* display: none; */
+  margin-top: 90px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* 아이디 감싸는 폼태그 */
+.lsa-join-infoBox-id{  
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 130px;
+  width: 486px;
+  margin: auto;
+}
+/* 아이디 입력하는 실제칸 */
+.lsa-join-info-id{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 아이디 중복확인 버튼 */
+.lsa-join-info-id-btn{
+  width: 130px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* 아이디 고정문구 */
+.lsa-join-info-id-inputStandard{
+  color: #606060;
+  /* display: none; */
+  margin-top: 80px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* 비밀번호 감싸는 폼태그 */
+.lsa-join-infoBox-pw1, .lsa-join-infoBox-pw2{
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 130px;
+  width: 486px;
+  margin: auto;
+}
+.lsa-join-infoBox-pw1>p, .lsa-join-infoBox-pw2>p{
+  text-align: left;
+  padding: 10px 50px 0px;
+}
+/* 비밀번호 입력하는 실제칸 */
+.lsa-join-info-pw{
+  width: 436px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 비밀번호 고정문구 */
+.lsa-join-info-pw-inputStandard{
+  color: #606060;
+  /* display: none; */
+  margin-top: 15px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* 닉네임 감싸는 폼태그 */
+.lsa-join-infoBox-nickName{  
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 130px;
+  width: 486px;
+  margin: auto;
+}
+/* 닉네임 입력하는 실제칸 */
+.lsa-join-info-nickName{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 닉네임 중복확인 버튼 */
+.lsa-join-info-nickName-btn{
+  width: 130px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* 닉네임 고정문구 */
+.lsa-join-inputStandard{
+  color: #606060;
+  /* display: none; */
+  margin-top: 80px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* 이메일주소 감싸는 폼태그 */
+.lsa-join-infoBox-email{  
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 130px;
+  width: 486px;
+  margin: auto;
+}
+/* 이메일주소 입력하는 실제칸 */
+.lsa-join-info-email{
+  width: 268px;
+  height: 70px;
+  padding-left: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+/* 이메일주소 중복확인 버튼 */
+.lsa-join-info-email-btn{
+  width: 130px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+/* 이메일주소 중복확인 버튼 */
+.lsa-join-infoBtn{
+  width: 130px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+/* 회원가입 감싸는 폼태그 */
+.lsa-join-joinBox{  
+  position: relative;
+  top: 10px;
+  border: 1px solid #D96073;
+  height: 130px;
+  width: 486px;
+  margin: auto;
+}
+/* 회원가입 버튼 */
+.lsa-join-infoBtn{
+  width: 486px;
+  height: 70px;
+  background-color: #D96073;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  /* text-decoration: none; */
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+
+/* ?? */
+/* .lsa-join-infoForm>div>img{
+  position: relative;
+  top: 10px;
+  right: -200px;
+} */
+
+
+
+
+
+
+/* 회원가입력버튼 */
+/* .lsa-join-infoBtn{
+  width: 486px;
+  height: 70px;
+  background-color: #D96073;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin: 10px 0px;
+  border: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer {
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute; 
+
+} */

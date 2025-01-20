@@ -1,0 +1,141 @@
+/* 마이페이지-일반회원 */
+*{
+  margin: 0; padding: 0; list-style: none;
+  color: #606060;
+}
+
+/* 공통메인 - 마이페이지 */
+.itAskBox{
+  height: 800px;
+  width: 1200px;
+  margin: 110px auto 0px;
+  /* background-color: rgb(201, 255, 237); */
+}
+/* 마이페이지 제목 */
+h3{
+font-size: 20px;
+width: 1038px;
+border-bottom: 1px solid #DFDFDF;
+padding-bottom:10px;
+margin: 0px auto 30px;
+}
+/* 좌측 프로필사진 박스*/
+.keh-mentoCheck-profile-left{
+  float: left;
+  /* background-color: antiquewhite; */
+  border: 1px solid #DFDFDF;
+  width: 320px;
+  height: 632px;
+  border-radius:50px;
+  margin-left: 80px;
+  text-align: center;  
+}
+/* 프로필사진공간 */
+.keh-mentoCheck-pic{
+  background-color: #D6DC82;
+  width: 250px;
+  height: 250px;
+  border-radius : 200px;
+  margin: 40px auto;
+}
+/* 회원구분 */
+.keh-mentoCheck-memType{
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.keh-mentoCheck-memType>span{
+  border: 1px solid black;
+  display: none;
+}
+/* 닉네임 */
+.keh-mentoCheck-memNickName{
+  font-size: 32px;
+}
+/* 내 모니터 총합 */
+.keh-mentoCheck-myMonitor{
+  font-size: 20px;
+}
+/* 구분선 */
+hr{
+  width: 250px;
+  margin: 42px auto;
+  border: 1px solid #DFDFDF;
+}
+/* 프로필사진하단 메뉴 */
+.keh-mentoCheck-myMenu>li>a{
+  text-decoration-line: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px 0px;
+}
+.keh-mentoCheck-myMenu>li>a:hover{
+  font-weight: bold;
+}
+
+/* 우측 자격/경력/뱃지 안내 */
+.keh-mentoCheck-profile-right{
+  float: right;
+  width: 670px;
+  height: 632px;
+  border-radius: 50px;
+  border: 1px solid #D96073;
+  margin-right: 80px;
+  text-align: center;
+}
+h4{
+  font-size: 24px;
+  padding: 40px 0px 10px;
+}
+/* 1.뱃지이미지 */
+.keh-mentoCheck-badgeIcon{
+  width: 120px;
+  display: flex;
+  /* border: 1px solid firebrick; */
+  height: 50px;
+  margin: auto;
+  justify-content: space-between;
+}
+.keh-mentoCheck-badgeIcon>div{
+  text-align: center;
+  font-size: 10px;
+  color: #D96073;
+}
+.keh-mentoCheck-badgeIcon>div>img{
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+/* 2.필요서류 */
+.keh-mentoCheck-needPaper{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DFDFDF;
+}
+/* 3.제출할곳 */
+.keh-mentoCheck-email{
+  width: 80%;
+  border-bottom: 1px solid #DFDFDF;
+  margin: auto;
+  padding-bottom: 30px;
+}
+/* 4.멘토뱃지 최소조건 */
+.keh-mentoCheck-condition{
+  width: 80%;
+  height: 50px;
+  margin: auto;
+}
+.keh-mentoCheck-condition>div{
+  text-align: center;
+  font-size: 10px;
+  color: #D96073;
+  padding-bottom: 30px;
+}
+.keh-mentoCheck-condition>div>img{
+  text-align: center;
+  display: block;
+  margin: auto;
+}

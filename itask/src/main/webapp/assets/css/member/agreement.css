@@ -1,0 +1,81 @@
+/* 전체약관 동의 페이지 */
+*{padding: 0; margin: 0; list-style: none; color: #606060;}
+.itAskBox{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  color: #606060;
+  height: 1400px;
+  font-size: 20px;
+  text-align: left;
+  /* border: 1px solid #D96073; */
+}
+/* 로고 */
+.itAskBox>a{
+  width: 370px;
+  display: block;
+  margin: 200px auto 50px;    
+}
+.itAskBox>a>img{
+  width: 100%;
+}
+
+/* 감싸는 폼태그 */
+form{
+  width: 486px;
+  /* border: 1px solid #606060; */
+  margin: auto;
+}
+
+
+/* 모든 input 태그 공통 적용 */
+form input{
+  margin: 30px 0px 20px;
+  cursor: pointer;
+}
+/* 전체동의 버튼만 margin값 다름 */
+.keh-agreement-total{
+margin-top: 0px;
+}
+/* 라벨 공통 */
+form label{
+  cursor: pointer;
+}
+/* 약관 전체보기 버튼 공통 */
+form a{
+  color: #DFDFDF;
+  text-decoration: none;
+  width: 468px;
+  display: block;
+  text-align: right;
+  padding: 10px 10px 0px 0px;
+}
+
+/* 전체 약관 내용이 들어있는 텍스트 박스 */
+form p{
+  width: 456px;
+  height: 80px;
+  padding: 15px;
+  border: 1px solid #DFDFDF;
+  border-radius: 20px;
+  font-size: 12px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* 다음 버튼 */
+.keh-agreement-btn{
+  width: 486px;
+  height: 70px;
+  border: none;
+  background-color: #D96073;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.keh-agreement-btn:hover{
+  border: 1px solid #D96073;
+  color: #D96073;
+  background-color: white;
+}
